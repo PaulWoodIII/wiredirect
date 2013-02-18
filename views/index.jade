@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+
+    p Click the links below to get your redirect.
+
+    #links
+        ul
+            li
+                a(href='/inbi', title='Get Inbi Redirect') Inbi
+            li
+                a(href='/error', title='Get error Redirect') error
+            li
+                a(href='/finish', title='Get finish Redirect') finish
+            li
+                a(href='/badge', title='Get badge Redirect') badge
+            li
+                a(href='/deal', title='Get deal Redirect') deal
