@@ -36,9 +36,6 @@ app.get('/error', function(req, res){
 app.get('/finish', function(req, res){
     res.redirect('walkin://');
 });
-app.get('/badge', function(req, res){
-    res.redirect('walkin://badge/imageurl:"http://badgeiamgeurl"/badgeText:text');
-});
 app.get('/deal', function(req, res){
     res.redirect('walkin://deal/dealId:101');
 });
