@@ -9,7 +9,13 @@ exports.index = function(req, res){
         res.send(404,'Error validating version');
     }
     else if (req.query.token && req.query.device && req.query.version){
-        res.render('index', { title: 'Wire Router' });
+        res.render('index',
+            {
+                title: 'Wire Router',
+                token: req.query.token,
+                device: req.query.device,
+                version: req.query.version
+            });
     }
     else{
         // Catch all doubt it should get here though
