@@ -3,6 +3,12 @@ extends layout
 block content
     h1= title
     p Please include your token, device, and version number in the url string
-    a(href='/redirect?token=token&device=device&version=10_10_10&url=http://baidu.com') A Verified Redirect URL
-    a(href='/error?') A Generic Error URL
-    a(href='/finish') A Finish URL
+
+    p
+        a(href='/redirect?token=token&device=device&version=10_10_10&url=http://baidu.com') A Verified Redirect URL
+
+    p
+        a(href='/error?') A Generic Error URL
+
+    p
+        a(href='/finish') A Finish URL
