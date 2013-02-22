@@ -30,7 +30,7 @@ redirects the HTTP request to: "walkin://error/message:ErrorMessageHere/errorTit
 
 3rd party websites or walkin hosted pages can point to this URL to get the proper error URL redirect from the server. It will redirect the client to a generic error. If a title or message is specified then the title and message will be included.
 
-The application should close the webview and display an Alert with the specified title and message
+The application should close the webview and display an alert with the specified title and message
 
 ##Finish
 
